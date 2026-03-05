@@ -1,0 +1,3 @@
+POLISH NOTATION: (PREFIX, INFIX AND POSTFIX)
+
+https://medium.com/nerd-for-tech/understanding-expression-notations-infix-prefix-and-postfix-simplified-526073df55f5
