@@ -5,11 +5,13 @@ class Node
 {
 public:
     int value;
+    Node *previous;
     Node *next;
     Node(int value)
     {
         this->value = value;
         next = nullptr;
+        previous = nullptr;
     }
 };
 
@@ -44,9 +46,6 @@ int main()
     list.print();
     return 0;
 }
-
-
-
 
 void LinkedList::deleteNode(int target)
 {
@@ -83,7 +82,7 @@ void LinkedList::print()
     {
         cout << temp->value << endl;
         temp = temp->next;
-    } 
+    }
 }
 void LinkedList::search(int target) // 52
 {
@@ -151,8 +150,6 @@ void LinkedList::insertAtPosition(int value, int position)
         delete newNode;
         return;
     }
-
-    // 1 3 7 9 12
 
     newNode->next = temp->next;
     temp->next = newNode;

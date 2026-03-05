@@ -11,8 +11,6 @@ public:
     }
 };
 
-
-
 class LinkedList {
 private:
     Node* head;
@@ -28,9 +26,6 @@ public:
         newNode->next = head;
         head = newNode;
     }
-
-
-
 
     // Insert at end
     void insertAtEnd(int value) {
